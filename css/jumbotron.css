@@ -1,0 +1,239 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  font-family: "Palanquin", sans-serif;
+}
+.jumbotron {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.gifBack {
+	background: #800020; 
+	height: 600px;
+}
+.hook {
+	background-image: url(../images/hookBack.jpg);
+	background-size: cover;
+	height: 600px;
+	padding-top: 20px;
+}
+.hook h1 {
+	color: white;
+	text-align: center;
+	line-height: 2em;
+	padding-top: 130px;
+	font-family: "Palanquin", sans-serif;
+	text-align: left;
+	padding-left: 240px;
+}
+.hook span {
+	font-family: "Cinzel Decorative", cursive;
+	text-transform: capitalize;
+	color: gold;
+}
+.imageMap {
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.imageTheatre {
+	background-image: url(../images/model.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.imageBook {
+	background-image: url(../images/cover.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.imageInk {
+	background-image: url(../images/ink.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.descriptor-banner {
+	background-color: white;
+    height: 150px;
+    width: 450px;
+    position: relative;
+    left: 330px;
+    top: 250px;
+    border-radius: 30px;
+}
+.descriptor-banner p {
+	padding-top: 45px;
+	padding-left: 45px;
+}
+.descriptor-box {
+	background-color: white;
+    height: 150px;
+    width: 450px;
+    position: relative;
+    left: 75px;
+    top: 380px;
+    border-radius: 30px;
+}
+.descriptor-box p {
+	padding-top: 45px;
+	padding-left: 45px;
+}
+.box-holder {
+	height: 380px;
+}
+button {
+	padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #800020;
+    color: white;
+    background: #800020;
+}
+
+button:hover {
+	border-color: goldenrod;
+}
+.navbar-nav li a{
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: "Cinzel Decorative", cursive;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: goldenrod;
+}
+#navbar ul li a {
+	color: goldenrod;
+}
+footer {
+	background: #222;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	position: relative;
+	clear: both;
+}
+.text-wrapper {
+	text-align: center;
+}
+footer .text-wrapper p {
+	display: inline;
+	padding-right: 40px;
+	color: goldenrod;
+}
+.uxBackOne {
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.uxBackOne p, .uxBackOne li, .uxBackThree p, .uxBackThree li {
+	color: white;
+	font-family: "Palanquin", sans-serif;
+}
+.uxBackTwo p, .uxBackTwo li {
+	color: white;
+	font-family: "Palanquin", sans-serif;
+}
+.uxBackOne h1, .uxBackOne h2, .uxBackOne h3, .uxBackThree h1, .uxBackThree h2, .uxBackThree h3 {
+	color: goldenrod;
+	font-family: "Cinzel Decorative", cursive;
+}
+.uxbackTwo h1, .uxBackTwo h2, .uxBackTwo h3 {
+	color: goldenrod;
+	font-family: "Cinzel Decorative", cursive;
+}
+.uxBackTwo {
+	background-image: url(../images/map-Early.jpg);
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.uxBackThree {
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.uxBackThree a:hover {
+	text-decoration: none;
+	color: #800020;
+	background-color: goldenrod;
+	opacity: .7;
+	border-radius: 10px;
+	padding: ;
+}
+.scenicBackOne {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackTwo {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackThree {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackFour {
+	background-image: url(../images/perspective.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackFive {
+	background-image: url(../images/drafting.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackSix {
+	background-image: url(../images/model.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackSeven {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
+	height: 200px;
+	background-color: #800020;
+}
+.scenicBackOneText li, .scenicBackTwoText p, .scenicBackThreeText p, .scenicBackFourText p, .scenicBackFiveText p, .scenicBackSixText p, .scenicBackSevenText p {
+	color: goldenrod;
+	font-family: "Palanquin", cursive;
+}
+.scenicBackOneText h2, .scenicBackTwoText h2, .scenicBackThreeText h2, .scenicBackFourText h2, .scenicBackFiveText h2, .scenicBackSixText h2, .scenicBackSevenText h2 {
+	color: goldenrod;
+	font-family: "Cinzel Decorative", sans-serif;
+}
+.designBackOneOne {
+	background-image: url(../images/sketchingOne.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.designBackOneThree {
+	background-image: url(../images/sketchingThree.jpg);
+	background-size: cover;
+	height: 600;
+}
+.designBackTwoTwo {
+	background-image: url(../images/mockTwo.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.designBackThreeTwo {
+	background-image: url(../images/finalTwo.jpg);
+	background-size: cover;
+	height: 600px;
+}
+.designBackOneText, .designBackTwoText, .designBackThreeText {
+	height: 200px;
+	background-color: #800020;
+}
+.designBackOneText p, .designBackTwoText p, .designBackThreeText p {
+	color: goldenrod;
+	font-family: "Palanquin", cursive;
+}
+.designBackOneText h2, .designBackTwoText h2, .designBackThreeText h2 {
+	color: goldenrod;
+	font-family: "Cinzel Decorative", sans-serif;
+}
