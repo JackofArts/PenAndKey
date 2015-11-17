@@ -22,13 +22,11 @@ body {
 	line-height: 2em;
 	padding-top: 130px;
 	font-family: "Palanquin", sans-serif;
-	text-align: left;
-	padding-left: 240px;
 }
 .hook span {
 	font-family: "Cinzel Decorative", cursive;
 	text-transform: capitalize;
-	color: gold;
+	color: black;
 }
 .imageMap {
 	background-image: url(../images/map.jpg);
@@ -68,32 +66,36 @@ body {
     height: 150px;
     width: 450px;
     position: relative;
-    left: 75px;
-    top: 380px;
+    left: 25%;
+    top: 50%;
     border-radius: 30px;
 }
-.descriptor-box p {
-	padding-top: 45px;
+.left-text {
+	padding-top: 25px;
+	padding-left: 45px;
+}
+.right-button {
+	padding-top: 35px;
 	padding-left: 45px;
 }
 .box-holder {
 	height: 380px;
 }
 button {
-	padding: 10px;
+	padding: 20px;
     border-radius: 10px;
     border: 3px solid #800020;
     color: white;
     background: #800020;
 }
-
 button:hover {
 	border-color: goldenrod;
 }
 .navbar-nav li a{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	font-family: "Cinzel Decorative", cursive;
+	font-size: 20px;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: goldenrod;
@@ -117,7 +119,7 @@ footer .text-wrapper p {
 	color: goldenrod;
 }
 .uxBackOne {
-	background-image: url(../images/map.jpg);
+	background-image: url(../images/europeSketches.jpg);
 	background-size: cover;
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -158,40 +160,44 @@ footer .text-wrapper p {
 	border-radius: 10px;
 	padding: ;
 }
-.scenicBackOne {
-	background-image: url(../images/filler.jpg);
-	background-size: cover;
-	height: 600px;
-}
 .scenicBackTwo {
-	background-image: url(../images/filler.jpg);
+	background-image: url(../images/shop.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-x: 50%;
 }
 .scenicBackThree {
-	background-image: url(../images/filler.jpg);
+	background-image: url(../images/blocking.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-x: 50%;
 }
 .scenicBackFour {
 	background-image: url(../images/perspective.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-y: 80%;
+	background-position-x: 50%;
 }
 .scenicBackFive {
 	background-image: url(../images/drafting.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-y: 45%;
+	background-position-x: 50%;
 }
 .scenicBackSix {
-	background-image: url(../images/model.jpg);
+	background-image: url(../images/model2.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-y: 40%;
+	background-position-x: 50%;
 }
 .scenicBackSeven {
-	background-image: url(../images/filler.jpg);
+	background-image: url(../images/finishedProduction.jpg);
 	background-size: cover;
 	height: 600px;
+	background-position-x: 50%;
 }
 .scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
 	height: 200px;
@@ -205,28 +211,66 @@ footer .text-wrapper p {
 	color: goldenrod;
 	font-family: "Cinzel Decorative", sans-serif;
 }
-.designBackOneOne {
-	background-image: url(../images/sketchingOne.jpg);
-	background-size: cover;
+.designBack {
 	height: 600px;
 }
-.designBackOneThree {
+.designBackInk {
 	background-image: url(../images/sketchingThree.jpg);
 	background-size: cover;
 	height: 600;
+	background-position-x: 50%;
 }
-.designBackTwoTwo {
-	background-image: url(../images/mockTwo.jpg);
+.designBackEmblem {
+	background-image: url(../images/Emblem.jpg);
 	background-size: cover;
+	background-position-x: 50%;
 	height: 600px;
 }
-.designBackThreeTwo {
-	background-image: url(../images/finalTwo.jpg);
+.designBackSwirl {
+	background-image: url(../images/Swirl.jpg);
 	background-size: cover;
+	background-position-x: 50%;
+	height: 600px;
+}
+.designBackRedLetter {
+	background-image: url(../images/RedLetter.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+	height: 600px;
+}
+.designBackOldNews {
+	background-image: url(../images/OldNews.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+	height: 600px;
+}
+.designBackCoverMock {
+	background-image: url(../images/CoverMock.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 15%;
+	height: 600px;
+}
+.designBackCatanMock {
+	background-image: url(../images/CatanMock.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+	height: 600px;
+}
+.designBackCatanScreen {
+	background-image: url(../images/CatanScreen.jpg);
+	background-size: cover;
+	background-position-x: 50%;
+	height: 600px;
+}
+.designBackKnifePortrait {
+	background-image: url(../images/KnifePortrait.jpg);
+	background-size: cover;
+	background-position-x: 50%;
 	height: 600px;
 }
 .designBackOneText, .designBackTwoText, .designBackThreeText {
-	height: 200px;
+	height: 300px;
 	background-color: #800020;
 }
 .designBackOneText p, .designBackTwoText p, .designBackThreeText p {
@@ -236,4 +280,174 @@ footer .text-wrapper p {
 .designBackOneText h2, .designBackTwoText h2, .designBackThreeText h2 {
 	color: goldenrod;
 	font-family: "Cinzel Decorative", sans-serif;
+}
+
+
+@media (max-width: 1500px) {
+	.descriptor-box {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 15%;
+    	top: 50%;
+    	border-radius: 30px;
+	}
+}
+@media (max-width: 1199px) {
+	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
+		height: 250px;
+	}
+}
+@media (max-width: 1150px) {
+	.descriptor-box {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 5%;
+    	top: 50%;
+    	border-radius: 30px;
+	}	
+}
+@media (max-width: 991px) {
+	.navbar-nav li a{
+		padding-left: 15px;
+		padding-right: 15px;
+		font-family: "Cinzel Decorative", cursive;
+		font-size: 16px;
+	}
+	.descriptor-box {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 25%;
+    	top: 50%;
+    	border-radius: 30px;
+	}
+	.descriptor-banner {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 15%;
+    	top: 250px;
+    	border-radius: 30px;
+	}
+	.hook {
+		background-image: url(../images/hookBack.jpg);
+		background-size: cover;
+		height: 600px;
+		padding-top: 20px;
+		background-position-x: -200px;
+	}
+	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
+		height: 300px;
+	}	
+}
+@media (max-width: 767px) {
+	.hook {
+		background-image: url(../images/hookBack.jpg);
+		background-size: cover;
+		height: 600px;
+		padding-top: 20px;
+		background-position-x: -350px;
+	}
+	.descriptor-banner {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 25%;
+    	top: 250px;
+    	border-radius: 30px;
+	}
+	.gif {
+		height: 400px;
+	}	
+	.gifBack {
+		height: 450px;
+	}
+	.scenicBackOneText p, .scenicBackTwoText p, .scenicBackThreeText p, .scenicBackFourText p, .scenicBackFiveText p, .scenicBackSixText p, .scenicBackSevenText p {
+		font-size: 18px;
+	}
+}
+@media (max-width: 650px) {
+	.descriptor-box {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 10%;
+    	top: 50%;
+    	border-radius: 30px;
+	}
+	.descriptor-banner {
+		background-color: white;
+    	height: 150px;
+    	width: 450px;
+    	position: relative;
+    	left: 10%;
+    	top: 250px;
+    }
+    .gif {
+		height: 300px;
+	}	
+	.gifBack {
+		height: 350px;
+	}
+	.hook h1 {
+		color: white;
+		text-align: center;
+		line-height: 1.5em;
+		padding-top: 100px;
+		font-family: "Palanquin", sans-serif;
+	}
+	footer .text-wrapper p {
+		display: inherit;
+	}
+}
+@media (max-width: 530px) {
+	.descriptor-box {
+		background-color: transparent;
+    	height: 100px;
+    	width: 200px;
+    	position: relative;
+    	left: 0%;
+    	top: 50%;
+    	border-radius: 30px;
+	}
+	.descriptor-banner {
+		background-color: transparent;
+    	height: 100px;
+    	width: 200px;
+    	position: relative;
+    	left: -30%;
+    	top: 250px;
+    }
+    .left-text {
+    	display: none;
+	}
+	.descriptor-banner p {
+		font-size: 12px;
+		padding-top: 20px;
+	}
+	button {
+		padding: 50px;
+    	border-radius: 10px;
+    	border: 3px solid #800020;
+    	color: white;
+    	background: #800020;
+	}
+	.hook h1 {
+		color: white;
+		text-align: center;
+		line-height: 1em;
+		padding-top: 20px;
+		font-family: "Palanquin", sans-serif;
+	}
+	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
+		height: 460px;
+	}
 }
