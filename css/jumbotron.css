@@ -426,7 +426,7 @@ footer .text-wrapper p {
     	left: -30%;
     	top: 250px;
     }
-    .left-text {
+    .left-text, .UX-Text {
     	display: none;
 	}
 	.descriptor-banner p {
