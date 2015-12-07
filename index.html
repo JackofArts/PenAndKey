@@ -17,7 +17,10 @@
     <link href="css/jumbotron.css" rel="stylesheet">
 
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Palanquin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,43 +44,60 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="ux_design.html">UX // UI Design</a></li>
+            <li><a href="ux_design.html">UX & UI Design</a></li>
             <li><a href="theatrical_design.html">Theatrical Design</a></li>
-            <li><a href="graphic_design.html">Graphic Design // Fine Art</a></li>
+            <li><a href="graphic_design.html">Graphic Design & Fine Art</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div>
-      <div class="gifBack">s
+      <div class="gifBack">
         <img class="gif col-lg-12 col-md-12 col-sm-12 col-xs-12" src="images/header.gif" alt="Pen and Key Designs" height="575" width="1875">
       </div>
       <div class="hook">
-        <h1>From <span>branding</span> to <span>scenic design</span>,<br> <span>web evelopment</span> to <span>sculpture</span>:<br> good design is an aesthetically tailored response to its users' needs.</h1>
+        <h1>Good design is an aesthetically tailored response to its users' needs.</h1>
+        <br><br><br>
+        <br>
+        <p class="text-wrapper"><a href="#mapBack"><i class="fa fa-5x fa-angle-double-down"></i></a></p>
       </div>
-      <div class="imageMap">
-        <div class="container">
+      <div class="imageMap" id="mapBack">
+        <a href="ux_design.html" class="massive-button">
           <div class="descriptor-banner">
-            <div class="description">
-              <p class="UX-Text col-lg-6 col-md-6 col-sm-6 col-xs-6">A web application gives a platform to a role-playing alernative history game</p>
-              <p class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="ux_design.html"><button>UX/UI Process</button></a></p>
-            </div>
+            <button class="non-nav-one">
+              <div class="text-wrapper description">
+                <h1>UX/UI Process</h1>
+                <p>A web application gives a platform to a role-playing alernative history game</p>
+              </div>
+            </button>  
           </div>
-        </div>
+        </a>
       </div>
       <div class="box-holder">
         <div class="imageTheatre col-lg-6 col-md-6 col-sm-12- col-xs-12">        
-          <div class="descriptor-box">
-            <p class="left-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Intensive research and a meticulous understanding of myriad needs meet mathmatical percision and beautiful storytelling.</p>
-            <p class="right-button col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="theatrical_design.html"><button>Theatrical Process</button></a></p>
-          </div>
+          <a href="theatrical_design.html" class="massive-button">
+            <div class="descriptor-box-one col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <button class="non-nav-two">
+                <div class="text-wrapper description">  
+                  <h1>Theatrical Process</h1>
+                  <p>Intensive research and a meticulous understanding of myriad needs meet mathmatical percision and beautiful storytelling.</p>
+                </div>
+              </button>
+            </div>    
+          </a>
         </div>
         <div class="imageBook col-lg-6 col-md-6 col-sm-12- col-xs-12">        
-          <div class="descriptor-box">
-            <p class="left-text col-lg-6 col-md-6 col-sm-6 col-xs-6">Branding, cover art, logos, and web layouts: using pixel-perfection showcase the passion in business.</p>
-            <p class="right-button col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="graphic_design.html"><button>Graphic Design and Fine Art</button></a></p>              
-          </div>
+          <a href="graphic_design.html" class="massive-button">
+            <div class="descriptor-box-two col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <button class="non-nav-three">
+                <div class="text-wrapper description">
+                  <h1>Graphic Design and Fine Art</h1>
+                  <p>Digital renderings and hand-drawn illustrations: various media to tell multitudinous stories.</p>
+                </div>
+              </button>              
+            </div>
+          </a>  
         </div>
       </div>      
     </div>
@@ -98,5 +118,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scrollspy.js"></script>
   </body>
 </html>

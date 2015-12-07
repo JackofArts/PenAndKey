@@ -16,7 +16,10 @@
     <link href="css/jumbotron.css" rel="stylesheet">
 
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Palanquin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,7 +28,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".side-nav" data-offset="50">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -40,62 +43,111 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="ux_design.html">UX // UI Design</a></li>
+            <li class="active"><a href="ux_design.html">UX & UI Design</a></li>
             <li><a href="theatrical_design.html">Theatrical Design</a></li>
-            <li><a href="graphic_design.html">Graphic Design // Fine Art</a></li>
+            <li><a href="graphic_design.html">Graphic Design & Fine Art</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="uxBackOne">
-        <div class="container">
-          <h1>Europe 1477</h1> 
-          <h2>An Overview</h2>
-          <p>Designed for players with a passion for history and creative storytelling, each player has control of a nation which he or she must guide through the ages with storytelling, creativity, and strategy.</p>
-          <h2>The Project</h2>
-          <p>Similar games exist but are run though, and structured by, modifications to existing video games or in a forum setting. This often leads to the games struggling to attract players and ending prematurely. The goal of Europe1477 was to create a codified set of rules and algorithms to decrease the workload on moderators while providing a stable and friendly platform with the possiblity of expansion to allow custom-created games.</p>
-        </div>
-      </div>
-      <div class="uxBackTwo">
-        <div class="container">      
-          <h2>Users Groups</h2>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h3>Students:</h3>
-            <p>Students' needs would focus on the game providing a more interactive and enjoyable medium of education. There would be a large varience in level of student interest in such a game and therefore the game should be user friendly and reward players who are more invested without punishing students playing only as a school requirement. Desired Features: <strong>streamlined game play options, restricted games, messaging system, ranking/tracking, turn status, map markers</strong></p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h3>Gamers:</h3>
-            <p>Many gamers, history enthusiasts, and storytellers already use similar games through verious media (such as: <em>game forums or reddit</em>). These users would be most interested in Europe 1477 providing a dedicated platform. Many of these users are vetern players and moderators and would be interested in tailoring individual games to their personal tastes. Desired Features: <strong>customizable nations, customizable trade/diplomacy, map overlays, game filters, group creation, custom games</strong></p>
+    <div class="whiteBack"></div>
+    <div class="expoBack"></div>
+    <div class="jumbotron uxPage">
+      <div class="col-lg-11 col-md-10 col-sm-10 col-xs-10 backTotal">
+        <div class="uxBackOne" id="projectOverview">
+          <div class="container">
+            <h1>Europe 1477</h1> 
+            <h2>An Overview</h2>
+            <p>Designed for players with a passion for history and creative storytelling, each player guides a nation through the ages with storytelling, creativity, and strategy.</p>
+            <h2>The Project</h2>
+            <p>Similar games exist but are run though, and structured by, modifications to existing video games or in forum settings. This leads to games struggling to attract players and ending prematurely. The goal of Europe1477 is to create a codified set of rules and algorithms to decrease the workload on moderators while providing a stable and friendly platform with the possiblity of expansion to allow custom-created games.</p>
           </div>
         </div>
+        <div class="uxBackTwo" id="userGroups">
+          <div class="container">      
+            <h2>User Groups</h2>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <h3>Students:</h3>
+              <p>Students' needs would focus on the game providing a more interactive and enjoyable medium of education. There would be a large varience in level of student interest in such a game and therefore the game should be user friendly and reward players who are more invested without punishing those playing only as a school requirement. Desired Features: <strong>streamlined game play options, restricted games, messaging system, turn status, map markers</strong></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <h3>Gamers:</h3>
+              <p>Many gamers, history enthusiasts, and storytellers already use similar games through various media (such as: <a href="http://forums.civfanatics.com/forumdisplay.php?f=69"><em>game forums</a> or <a href="https://www.reddit.com/r/civbattleroyale/">reddit</a></em>). These users would be most interested in Europe 1477 providing a dedicated platform. Many of these users are vetern players and moderators and would be interested in tailoring individual games to their personal play styles. Desired Features: <strong>customizable nations, customizable trade/diplomacy, map overlays, game filters, group creation, custom games, ranking/tracking system</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="uxBackThree" id="designProcess">
+          <div class="container">
+            <h2>Designing Europe 1477</h2>
+            <ul>
+              <h3>Designing the game:</h3>
+              <li>Testing of similar existing game concepts</li>
+              <li>In-depth research of the political, historical, socio-economic, religious, industrial, military, and cultural climate of late Medeival and Renaissance Europe</li>
+              <li>Writing and testing algorithms to strike the balance between realism and playability</li>
+              <li>Allowing player freedom of choice to shape the game</li>
+              <li>Creating structures to reduce moderator workload without limiting players</li>
+              <li>Compiling statistics for each nation and constructing the map</li>
+              <li>ALPHA test</li>
+              <li>Refining gameplay</li>
+            </ul>
+            <ul>
+              <h3>Designing the game platform:</h3>
+              <li>BETA test for player painpoints</li>
+              <li>Sketch layout designs for a platform that encourages communication and player creation</li>
+              <li>Analyize and modify designs to ensure platform is robust enough for players who are more involved while not penalizing more casual players</li>
+              <li>Identify basic components: player interface, contacts and chat features, game searching and hosting, templature, and publication/update pushpin system</li>
+              <li>Prototype platform with Photoshop and InvisionApp</li>
+              <li>Identify secondary components for prototype expansion: moderator calculators and interface, ability to customize starting national statistics and map, ability to customize templates available to players</li>
+            </ul>
+          </div>
+        </div>
+        <div class="uxBackFour" id="sketchesMockUps">
+          <div class="container text-wrapper">
+            <div>
+              <h2>Pre-Platform Work</h2>
+              <div class="origin col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="originZoom col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            </div>
+            <div>
+              <h2>Platform Sketches</h2>
+              <div class="sketchOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>              
+              <div class="sketchTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="sketchThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="sketchFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="sketchFive col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="sketchSix col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            </div>
+            <div>                        
+              <h2>Platform Medium Fidelity Mock-Ups</h2>
+              <div class="meFiOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="meFiTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="meFiThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="meFiFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            </div>
+            <div>
+              <h2>Platform High Fidelity Detail</h2>
+              <div class="hiFi col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+            </div>            
+          </div>
+        </div>
+        <div class="uxBackFive" id="prototype">
+          <div class="container">
+            <h2 class="text-wrapper"><button class="proto"><a href="https://invis.io/GJ4X1KYRE">View >></a></button> the InvisionApp prototype of the game platfroms</h2>
+          </div>
+        </div>
       </div>
-      <div class="uxBackThree">
-        <div class="container">
-          <h2>Designing Europe 1477</h2>
+      <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+        <i class="fa fa-3x fa-bars" id="side-nav-span"></i>
+        <div class="side-nav">
           <ul>
-            <h3>Designing the game:</h3>
-            <li>Testing of similar existing game concepts</li>
-            <li>Hundreds of hours of research on the political, historical, socio-economic, religious, industrial, military, and cultural climate of late Medeival and Renaissance Europe</li>
-            <li>Writing and testing algorithms to strike the balance between realism and playability</li>
-            <li>Allowing player freedom of choice to shape the game</li>
-            <li>Creating structures to reduce moderator workload without limiting players</li>
-            <li>Compiling statistics for each nation and constructing the map</li>
-            <li>ALPHA test</li>
-            <li>Refining gameplay</li>
+            <li><a href="#projectOverview"><button>Project Overview</button></a></li>
+            <li><a href="#userGroups"><button>User Groups</button></a></li>
+            <li><a href="#designProcess"><button>Design Process</button></a></li>
+            <li><a href="#sketchesMockUps"><button>Sketches/Mock-Ups</button></a></li>
+            <li><a href="#prototype"><button>InvisionApp Prototype</button></a></li>
           </ul>
-          <ul>
-            <h3>Designing the game platform:</h3>
-            <li>BETA test for player painpoints</li>
-            <li>Sketch layout designs for a platform that encourages communication and player creation</li>
-            <li>Analyize and modify designs to ensure platform is robust enough for players who are more involved while not penalizing more casual players</li>
-            <li>Identify basic components: player interface, contacts and chat features, game searching and hosting, templature and publication/update pushpin system</li>
-            <li>Prototype platform with Photoshop and InvisionApp</li>
-            <li>Identify secondary components for prototype expansion: moderator calculators and interface, ability to customize starting national statistics and map, ability to customize templates available to players</li>
-          </ul>
-          <h2><a href="https://invis.io/GJ4X1KYRE">Invision prototype</a></h2>
         </div>
       </div>
     </div>
@@ -114,6 +166,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/scrollspy.js"></script>
   
   </body>
 </html>

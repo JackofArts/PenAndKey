@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Graphic Design and Fine Art</title>
+    <title>Graphic Design & Fine Art</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,10 @@
     <link href="css/jumbotron.css" rel="stylesheet">
 
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative|Palanquin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,62 +43,77 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="ux_design.html">UX // UI Design</a></li>
+            <li><a href="ux_design.html">UX & UI Design</a></li>
             <li><a href="theatrical_design.html">Theatrical Design</a></li>
-            <li class="active"><a href="graphic_design.html">Graphic Design // Fine Art</a></li>
+            <li class="active"><a href="graphic_design.html">Graphic Design & Fine Art</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="jumbotron">
-      <div class="designBackOneText">
-        <div class="container">      
-          <h2>Sketching</h2>
-          <p>Whether its a smooth vector emblem, loose swirls, a pen and ink narrative, or a mixed-media landscape, sketching develops strong layout and powerful color and media combinations.</p>  
+    <div class="woodBack"></div>
+    <div class="penInk"></div>
+    <div class="jumbotron graphicPage">
+      <div class="col-lg-11 col-md-10 col-sm-10 col-xs-10 backTotal">
+        <div class="designBackOne" id="sketching">
+          <div class="container">
+            <h2>Sketching</h2>
+            <div class="sketchingOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingFive col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingSix col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            <div class="sketchingSeven col-lg-6 col-md-6 col-sm-6 col-xs-12"></div> 
+            <div class="sketchingEight col-lg-6 col-md-6 col-sm-6 col-xs-12"></div> 
+          </div>
+        </div>
+        <div class="designBackTwo" id="mocks">
+          <div class="container">
+            <div>      
+              <h2>Mock-Ups</h2>
+              <div class="mockOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="mockTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="mockThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="mockFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            </div>
+          </div>
+        </div>
+        <div class="designBackFour" id="hi-fid">
+          <div class="container">
+            <div>
+              <h2>Finished Websites</h2>
+              <div class="hiFiOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="hiFiTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="hiFiThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="hiFiFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>              
+            </div>          
+          </div>
+        </div>
+        <div class="designBackThree" id="emotion">
+          <div class="container">
+            <div>
+              <h2>Finished Fine Art</h2>
+              <div class="fineOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="fineTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="fineThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+              <div class="fineFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="designBack">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackEmblem">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackSwirl">
-        </div>
-      </div>
-      <div class="designBack">
-        <div class="designBackInk col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        </div>
-      </div>
-      <div class="designBackTwoText">
-        <div class="container">
-          <h2>Mock-Ups</h2>
-          <p>More structured rounds of sketching that are used to obtain and incorporate feedback; mock-ups are the beginning of version control as well.</p>
+      <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+        <i class="fa fa-3x fa-bars" id="side-nav-span"></i>
+        <div class="side-nav">
+          <ul>
+            <li><a href="#sketching"><button>Sketching</button></a></li>
+            <li><a href="#mocks"><button>Mock-Ups</button></a></li>
+            <li><a href="#emotion"><button>Finished Pieces:<br>Fine Art</button></a></li>
+            <li><a href="#hi-fid"><button>Finished Pieces:<br>Hi-Fidelity Mock-Ups</button></a></li>
+          </ul>
         </div>
       </div>
-      <div class="designBack">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackRedLetter">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackOldNews">
-        </div>
-      </div>
-      <div class="designBack">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackCoverMock">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackCatanMock">
-        </div>
-      </div>
-      <div class="designBackThreeText">
-        <div class="container">
-          <h2>Final Products</h2>
-          <p>A balance of feedback, realism, emotion, color, and form as the culmination of the design process.</p> 
-        </div>
-      </div>
-      <div class="designBack">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackCatanScreen">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 designBackKnifePortrait">
-        </div>
-      </div>
-
+    </div>
       
     <footer>
       <div class="text-wrapper">
@@ -111,6 +129,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/scrollspy.js"></script>
   
   </body>
 </html>

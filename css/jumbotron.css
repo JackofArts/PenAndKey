@@ -1,114 +1,76 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
+/*
+-----General Styling-----
+*/
+
 body {
-  font-family: "Palanquin", sans-serif;
+  font-family: "Francois One", sans-serif;
+  color: white;
+  background: #222;
 }
 .jumbotron {
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
-.gifBack {
-	background: #800020; 
-	height: 600px;
+#side-nav-span {
+	cursor: pointer;
+	position: fixed;
+	z-index: 150;
+	margin-top: 20px;
 }
-.hook {
-	background-image: url(../images/hookBack.jpg);
-	background-size: cover;
-	height: 600px;
-	padding-top: 20px;
+.side-nav {
+	position: fixed;
+	z-index: 100;
+	display: none;
+	margin-top: 30px;
 }
-.hook h1 {
-	color: white;
+.side-nav ul {
+	list-style: none;
+	padding-top: 50px;
+}
+.side-nav ul li {
+	display: block;
 	text-align: center;
-	line-height: 2em;
-	padding-top: 130px;
-	font-family: "Palanquin", sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 20px;
 }
-.hook span {
-	font-family: "Cinzel Decorative", cursive;
-	text-transform: capitalize;
-	color: black;
+.side-nav ul li button {
+	background-color: #222;
+	padding:20px;
+	border: none;
+	border-radius: 10px;
+	width: 250px;
 }
-.imageMap {
-	background-image: url(../images/map.jpg);
-	background-size: cover;
-	height: 600px;
-}
-.imageTheatre {
-	background-image: url(../images/model.jpg);
-	background-size: cover;
-	height: 600px;
-}
-.imageBook {
-	background-image: url(../images/cover.jpg);
-	background-size: cover;
-	height: 600px;
-}
-.imageInk {
-	background-image: url(../images/ink.jpg);
-	background-size: cover;
-	height: 600px;
-}
-.descriptor-banner {
-	background-color: white;
-    height: 150px;
-    width: 450px;
-    position: relative;
-    left: 330px;
-    top: 250px;
-    border-radius: 30px;
-}
-.descriptor-banner p {
-	padding-top: 45px;
-	padding-left: 45px;
-}
-.descriptor-box {
-	background-color: white;
-    height: 150px;
-    width: 450px;
-    position: relative;
-    left: 25%;
-    top: 50%;
-    border-radius: 30px;
-}
-.left-text {
-	padding-top: 25px;
-	padding-left: 45px;
-}
-.right-button {
-	padding-top: 35px;
-	padding-left: 45px;
-}
-.box-holder {
-	height: 380px;
-}
-button {
+.side-nav a {
+	text-decoration: none;
+	color: white;
 	padding: 20px;
-    border-radius: 10px;
-    border: 3px solid #800020;
-    color: white;
-    background: #800020;
+	width: 250px;
 }
-button:hover {
-	border-color: goldenrod;
+.side-nav a:hover {
+	color: #CEB573;
+}
+.navbar {
+	background: #333;
 }
 .navbar-nav li a{
 	padding-left: 15px;
 	padding-right: 15px;
-	font-family: "Cinzel Decorative", cursive;
 	font-size: 20px;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-	background-color: goldenrod;
+	background-color: #CEB573;
 }
 #navbar ul li a {
-	color: goldenrod;
+	color: #CEB573;
 }
 footer {
-	background: #222;
+	background: #333;
 	padding-top: 40px;
 	padding-bottom: 30px;
 	position: relative;
 	clear: both;
+	z-index: 50;
 }
 .text-wrapper {
 	text-align: center;
@@ -116,81 +78,411 @@ footer {
 footer .text-wrapper p {
 	display: inline;
 	padding-right: 40px;
-	color: goldenrod;
+	color: #CEB573;
+	font-size: 20px;
 }
-.uxBackOne {
-	background-image: url(../images/europeSketches.jpg);
+.backTotal {
+	opacity: 1;
+}
+.woodBack {
+	background-image: url(../images/woodBackTwo.jpg);
+	background-size: contain;
+	position: fixed;
+	height: 300%;
+	width: 100%;
+	opacity: .75;
+}
+.whiteBack {
+	background-image: url(../images/whiteBack.jpg);
 	background-size: cover;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	position: fixed;
+	height: 300%;
+	width: 100%;
+	opacity: .75;
 }
-.uxBackOne p, .uxBackOne li, .uxBackThree p, .uxBackThree li {
+.penInk {
+    background-image: url(../images/penInk.png);
+    background-size: contain;
+    position: fixed;
+    height: 610px;
+    width: 920px;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+.xactoBack {
+    background-image: url(../images/xacto.png);
+    background-size: contain;
+    position: fixed;
+    height: 610px;
+    width: 480px;
+    bottom: 0;
+    left: 86%;
+    background-repeat: no-repeat;
+}
+.expoBack {
+	background-image: url(../images/expo.png);
+    background-size: contain;
+    position: fixed;
+    height: 610px;
+    width: 220px;
+    bottom: 0;
+    left: 87%;
+    background-repeat: no-repeat;
+}
+.matBack{
+	background-image: url(../images/greenMatBack.jpg);
+	background-size: cover;
+	position: fixed;
+	height: 300%;
+	width: 100%;
+	background-repeat: no-repeat;
+	opacity: .75;
+}
+
+/*
+-----Index Styling-----
+*/
+
+.gifBack {
+	padding-top: 50px;
+	background: #ffffff; 
+	height: 600px;
+	position: relative;
+	z-index: 50;
+}
+.hook {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+	padding-top: 20px;
+	position: relative;
+	z-index: 50;
+}
+.hook h1 {
 	color: white;
-	font-family: "Palanquin", sans-serif;
+	text-align: center;
+	line-height: 2em;
+	padding-top: 130px;
+}
+.fa-angle-double-down {
+	color: white;
+}
+.fa-angle-double-down:active {
+	color: white;
+}
+.imageMap {
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 40;
+}
+.imageTheatre {
+	background-image: url(../images/model.jpg);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 30;
+}
+.imageBook {
+	background-image: url(../images/cover.jpg);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 30;
+}
+.descriptor-banner {
+    position: fixed;
+    top: 100px;
+    display: none;
+    max-width: 350px;
+}
+.non-nav-one, .non-nav-two, .non-nav-three {
+	background-color: #222;
+	border-radius: 10px;
+	border: none;
+	width: 320px;
+	border: 3px solid #222;
+}
+.non-nav-one p, .non-nav-two p, .non-nav-three p {
+	font-size: 16px;
+}
+.descriptor-banner p, .descriptor-banner h1 {
+	padding-top: 5px;
+}
+.massive-button, .massive-button:hover {
+	text-decoration: none;
+}
+.massive-button p, .massive-button h1 {
+	color: white;
+}
+.descriptor-box-one, .descriptor-box-two {
+    position: fixed;
+    top: 650px;
+    display: none;
+    max-width: 350px;
+}
+.box-holder {
+	height: 380px;
+}
+
+/*
+-----UX Page Styling-----
+*/
+
+.uxBackOne .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.uxBackTwo .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.uxBackThree .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.uxBackThree li {
+	font-size: 18px;
+	border-radius: 20px;
+}
+.uxBackFour .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.uxBackFive .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.uxBackOne p, .uxBackOne li, .uxBackThree p, .uxBackThree li, .uxBackFour p, .uxBackFour li, .uxBackFive p, .uxBackFive li {
+	color: white;
 }
 .uxBackTwo p, .uxBackTwo li {
 	color: white;
-	font-family: "Palanquin", sans-serif;
 }
 .uxBackOne h1, .uxBackOne h2, .uxBackOne h3, .uxBackThree h1, .uxBackThree h2, .uxBackThree h3 {
-	color: goldenrod;
-	font-family: "Cinzel Decorative", cursive;
 }
 .uxbackTwo h1, .uxBackTwo h2, .uxBackTwo h3 {
-	color: goldenrod;
-	font-family: "Cinzel Decorative", cursive;
+}
+.uxBackOne {
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .uxBackTwo {
-	background-image: url(../images/map-Early.jpg);
-	background-size: cover;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
 .uxBackThree {
-	background-image: url(../images/map.jpg);
-	background-size: cover;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.uxBackThree a:hover {
-	text-decoration: none;
-	color: #800020;
-	background-color: goldenrod;
-	opacity: .7;
-	border-radius: 10px;
-	padding: ;
+.uxBackFour {
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
+.uxBackFour h2 {
+	font-size: 40px;
+}
+.uxBackFive {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.uxBackFive h2 {
+	padding-bottom: 10px;
+}
+.origin, .originZoom, .sketchOne, .sketchTwo, .sketchThree, .sketchFour, .sketchFive, .sketchSix, .meFiOne, .meFiTwo, .meFiThree, .meFiFour {
+	height: 400px;
+	background-repeat: no-repeat;
+}
+.origin {
+	background-image: url(../images/origin.jpg);
+	background-size: contain;
+}
+.originZoom {
+	background-image: url(../images/originZoom.jpg);
+	background-size: contain;
+}
+.sketchOne {
+	background-image: url(../images/sketchLanding.jpg);
+	background-size: contain;
+}
+.sketchTwo {
+	background-image: url(../images/sketchProfile.jpg);
+	background-size: contain;
+}
+.sketchThree {
+	background-image: url(../images/sketchChat.jpg);
+	background-size: contain;
+}
+.sketchFour {
+	background-image: url(../images/sketchTrade.jpg);
+	background-size: contain;
+}
+.sketchFive {
+	background-image: url(../images/sketchUIOne.jpg);
+	background-size: contain;
+}
+.sketchSix {
+	background-image: url(../images/sketchUITwo.jpg);
+	background-size: contain;
+}
+.meFiOne {
+	background-image: url(../images/meFiLanding.jpg);
+	background-size: contain;
+}
+.meFiTwo {
+	background-image: url(../images/meFiChat.jpg);
+	background-size: contain;
+}
+.meFiThree {
+	background-image: url(../images/meFiTrade.jpg);
+	background-size: contain;
+}
+.meFiFour {
+	background-image: url(../images/meFiPins.jpg);
+	background-size: contain;
+}
+.hiFi {
+	background-image: url(../images/hiFiMap.jpg);
+	background-size: cover;
+	height: 1000px;
+	margin-bottom: 20px;
+}
+.proto {
+	background: #CEB573;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+}
+.proto:hover {
+	border: 3px solid white;
+}
+.proto a {
+	color: #222;
+	text-decoration: none;
+}
+
+/*
+-----Theatrical Page Styling-----
+*/
+
+.theatreBackOne .container {
+	background-color: #222;
+	border-radius: 20px;	
+}
+.theatreBackTwo .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.theatreBackThree .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.theatreBackFour .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.theatreBackFive .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.theatreBackOne {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.theatreBackTwo {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.theatreBackThree {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.theatreBackFour {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.theatreBackFive {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.blockingOne, .blockingTwo, .blockingThree, .blockingFour, .perspectiveOne, .perspectiveTwo, .perspectiveThree, .perspectiveFour, .draftingOne, .draftingTwo, .draftingThree, .draftingFour, .modelingOne, .modelingTwo, .modelingThree, .modelingFour {
+	height: 400px;
+	background-repeat: no-repeat;
+}
+.blockingOne {
+	background-image: url(../images/blockingOne.jpg);
+	background-size: contain;
+	margin-bottom: 20px;
+}
+.blockingTwo {
+	background-image: url(../images/blockingTwo.jpg);
+	background-size: contain;
+	margin-bottom: 20px;
+}
+.blockingThree {
+	background-image: url(../images/blocking.jpg);
+	background-size: contain;
+}
+.blockingFour {
+	background-image: url(../images/blocking.jpg);
+	background-size: contain;
+}
+.perspectiveOne {
+	background-image: url(../images/pewTwo.jpg);
+	background-size: contain;
+}
+.perspectiveTwo {
+	background-image: url(../images/walls.jpg);
+	background-size: contain;
+}
+.perspectiveThree {
+	background-image: url(../images/perspective.jpg);
+	background-size: contain;
+}
+.perspectiveFour {
+	background-image: url(../images/pentacostLighting.jpg);
+	background-size: contain;
+	margin-bottom: 20px;
+}
+.draftingOne {
+	background-image: url(../images/beautyQueenDetail.jpg);
+	background-size: contain;
+}
+.draftingTwo {
+	background-image: url(../images/beauty-queen-lrg.jpg);
+	background-size: contain;
+}
+.draftingThree {
+	background-image: url(../images/liliomGP.jpg);
+	background-size: contain;
+}
+.draftingFour {
+	background-image: url(../images/drafting.jpg);
+	background-size: contain;
+}
+.modelingOne {
+	background-image: url(../images/model2.jpg);
+	background-size: contain;
+}
+.modelingTwo {
+	background-image: url(../images/beautyQueenTopDown.jpg);
+	background-size: contain;
+}
+.modelingThree {
+	background-image: url(../images/beautyQueenLineUp.jpg);
+	background-size: contain;
+}
+.modelingFour {
+	background-image: url(../images/beauty-queen-model-lrg.jpg);
+	background-size: contain;
+}
+
+
 .scenicBackTwo {
 	background-image: url(../images/shop.jpg);
 	background-size: cover;
 	height: 600px;
-	background-position-x: 50%;
-}
-.scenicBackThree {
-	background-image: url(../images/blocking.jpg);
-	background-size: cover;
-	height: 600px;
-	background-position-x: 50%;
-}
-.scenicBackFour {
-	background-image: url(../images/perspective.jpg);
-	background-size: cover;
-	height: 600px;
-	background-position-y: 80%;
-	background-position-x: 50%;
-}
-.scenicBackFive {
-	background-image: url(../images/drafting.jpg);
-	background-size: cover;
-	height: 600px;
-	background-position-y: 45%;
-	background-position-x: 50%;
-}
-.scenicBackSix {
-	background-image: url(../images/model2.jpg);
-	background-size: cover;
-	height: 600px;
-	background-position-y: 40%;
 	background-position-x: 50%;
 }
 .scenicBackSeven {
@@ -199,141 +491,161 @@ footer .text-wrapper p {
 	height: 600px;
 	background-position-x: 50%;
 }
-.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
-	height: 200px;
-	background-color: #800020;
+
+/*
+-----Graphic Design Page Styling-----
+*/
+
+.designBackOne .container {
+	background-color: #222;
+	border-radius: 20px;	
 }
-.scenicBackOneText li, .scenicBackTwoText p, .scenicBackThreeText p, .scenicBackFourText p, .scenicBackFiveText p, .scenicBackSixText p, .scenicBackSevenText p {
-	color: goldenrod;
-	font-family: "Palanquin", cursive;
+.designBackTwo .container {
+	background-color: #222;
+	border-radius: 20px;
 }
-.scenicBackOneText h2, .scenicBackTwoText h2, .scenicBackThreeText h2, .scenicBackFourText h2, .scenicBackFiveText h2, .scenicBackSixText h2, .scenicBackSevenText h2 {
-	color: goldenrod;
-	font-family: "Cinzel Decorative", sans-serif;
+.designBackThree .container {
+	background-color: #222;
+	border-radius: 20px;
 }
-.designBack {
-	height: 600px;
+.designBackFour .container {
+	background-color: #222;
+	border-radius: 20px;
 }
-.designBackInk {
+.designBackFive .container {
+	background-color: #222;
+	border-radius: 20px;
+}
+.designBackOne {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.designBackTwo {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.designBackThree {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.designBackFour {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.designBackFive {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.sketchingOne, .sketchingTwo, .sketchingThree, .sketchingFour, .sketchingFive, .sketchingSix, .sketchingSeven, .sketchingEight, .mockOne, .mockTwo, .mockThree, .mockFour, .fineOne, .fineTwo, .fineThree, .fineFour, .hiFiOne, .hiFiTwo, .hiFiThree, .hiFiFour {
+	height: 400px;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+.sketchingOne {
+	background-image: url(../images/poppy.jpg);
+	background-size: contain;
+}
+.sketchingTwo {
 	background-image: url(../images/sketchingThree.jpg);
-	background-size: cover;
-	height: 600;
-	background-position-x: 50%;
+	background-size: contain;
 }
-.designBackEmblem {
-	background-image: url(../images/Emblem.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
-}
-.designBackSwirl {
+.sketchingThree {
 	background-image: url(../images/Swirl.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
+	background-size: contain;
 }
-.designBackRedLetter {
+.sketchingFour {
+	background-image: url(../images/sketchingTwo.jpg);
+	background-size: contain;
+}
+.sketchingFive {
+	background-image: url(../images/cogs.jpg);
+	background-size: contain;
+}
+.sketchingSix {
+	background-image: url(../images/egg.jpg);
+	background-size: contain;
+}
+.sketchingSeven {
+	background-image: url(../images/funnyFace.jpg);
+	background-size: contain;
+}
+.sketchingEight {
+	background-image: url(../images/inkFaceSketch.jpg);
+	background-size: contain;
+}
+.mockOne {
 	background-image: url(../images/RedLetter.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
+	background-size: contain;
 }
-.designBackOldNews {
+.mockTwo {
 	background-image: url(../images/OldNews.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
+	background-size: contain;
 }
-.designBackCoverMock {
-	background-image: url(../images/CoverMock.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	background-position-y: 15%;
-	height: 600px;
+.mockThree {
+	background-image: url(../images/inkFaceMock.jpg);
+	background-size: contain;
 }
-.designBackCatanMock {
+.mockFour {
 	background-image: url(../images/CatanMock.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
+	background-size: contain;
 }
-.designBackCatanScreen {
-	background-image: url(../images/CatanScreen.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
-}
-.designBackKnifePortrait {
+.fineOne {
 	background-image: url(../images/KnifePortrait.jpg);
-	background-size: cover;
-	background-position-x: 50%;
-	height: 600px;
+	background-size: contain;
 }
-.designBackOneText, .designBackTwoText, .designBackThreeText {
-	height: 300px;
-	background-color: #800020;
+.fineTwo {
+	background-image: url(../images/finalOne.jpg);
+	background-size: contain;
 }
-.designBackOneText p, .designBackTwoText p, .designBackThreeText p {
-	color: goldenrod;
-	font-family: "Palanquin", cursive;
+.fineThree {
+	background-image: url(../images/acrylic-self-portrait-lrg.jpg);
+	background-size: contain;
 }
-.designBackOneText h2, .designBackTwoText h2, .designBackThreeText h2 {
-	color: goldenrod;
-	font-family: "Cinzel Decorative", sans-serif;
+.fineFour {
+	background-image: url(../images/arm-sculpture-lrg.jpg);
+	background-size: contain;
+}
+.hiFiOne {
+	background-image: url(../images/CatanScreen.jpg);
+	background-size: contain;
+}
+.hiFiTwo {
+	background-image: url(../images/OldNewsScreen.jpg);
+	background-size: contain;
+}
+.hiFiThree {
+	background-image: url(../images/lopezSmolensScreen.jpg);
+	background-size: contain;
+}
+.hiFiFour {
+	background-image: url(../images/knotStandardScreen.jpg);
+	background-size: contain;
 }
 
+/*
+-----@Media Styles-----
+*/
 
-@media (max-width: 1500px) {
-	.descriptor-box {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
-    	position: relative;
-    	left: 15%;
-    	top: 50%;
-    	border-radius: 30px;
-	}
-}
 @media (max-width: 1199px) {
 	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
-		height: 250px;
+		height: 320px;
 	}
-}
-@media (max-width: 1150px) {
-	.descriptor-box {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
-    	position: relative;
-    	left: 5%;
-    	top: 50%;
-    	border-radius: 30px;
-	}	
 }
 @media (max-width: 991px) {
 	.navbar-nav li a{
 		padding-left: 15px;
 		padding-right: 15px;
-		font-family: "Cinzel Decorative", cursive;
 		font-size: 16px;
 	}
-	.descriptor-box {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
+	.descriptor-box-one, .descriptor-box-two {
     	position: relative;
     	left: 25%;
-    	top: 50%;
-    	border-radius: 30px;
+    	top: 250;
 	}
 	.descriptor-banner {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
     	position: relative;
     	left: 15%;
     	top: 250px;
-    	border-radius: 30px;
 	}
 	.hook {
 		background-image: url(../images/hookBack.jpg);
@@ -343,10 +655,13 @@ footer .text-wrapper p {
 		background-position-x: -200px;
 	}
 	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
-		height: 300px;
+		height: 370px;
 	}	
 }
 @media (max-width: 767px) {
+	footer .text-wrapper p {
+		display: inherit;
+	}
 	.hook {
 		background-image: url(../images/hookBack.jpg);
 		background-size: cover;
@@ -355,13 +670,9 @@ footer .text-wrapper p {
 		background-position-x: -350px;
 	}
 	.descriptor-banner {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
     	position: relative;
     	left: 25%;
     	top: 250px;
-    	border-radius: 30px;
 	}
 	.gif {
 		height: 400px;
@@ -374,19 +685,12 @@ footer .text-wrapper p {
 	}
 }
 @media (max-width: 650px) {
-	.descriptor-box {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
+	.descriptor-box-one, .descriptor-box-two {
     	position: relative;
     	left: 10%;
-    	top: 50%;
-    	border-radius: 30px;
+    	top: 250px;
 	}
 	.descriptor-banner {
-		background-color: white;
-    	height: 150px;
-    	width: 450px;
     	position: relative;
     	left: 10%;
     	top: 250px;
@@ -402,52 +706,33 @@ footer .text-wrapper p {
 		text-align: center;
 		line-height: 1.5em;
 		padding-top: 100px;
-		font-family: "Palanquin", sans-serif;
-	}
-	footer .text-wrapper p {
-		display: inherit;
 	}
 }
 @media (max-width: 530px) {
-	.descriptor-box {
-		background-color: transparent;
-    	height: 100px;
-    	width: 200px;
+	.descriptor-box-one, .descriptor-box-two {
     	position: relative;
     	left: 0%;
-    	top: 50%;
-    	border-radius: 30px;
+    	top: 250;
 	}
 	.descriptor-banner {
-		background-color: transparent;
-    	height: 100px;
-    	width: 200px;
     	position: relative;
     	left: -30%;
     	top: 250px;
+    	max-width: 350px;
     }
     .left-text, .UX-Text {
     	display: none;
 	}
 	.descriptor-banner p {
 		font-size: 12px;
-		padding-top: 20px;
-	}
-	button {
-		padding: 50px;
-    	border-radius: 10px;
-    	border: 3px solid #800020;
-    	color: white;
-    	background: #800020;
 	}
 	.hook h1 {
 		color: white;
 		text-align: center;
 		line-height: 1em;
 		padding-top: 20px;
-		font-family: "Palanquin", sans-serif;
 	}
 	.scenicBackOneText, .scenicBackTwoText, .scenicBackThreeText, .scenicBackFourText, .scenicBackFiveText, .scenicBackSixText, .scenicBackSevenText {
-		height: 460px;
+		height: 510px;
 	}
 }
