@@ -648,7 +648,7 @@ footer .text-wrapper p {
     	top: 250px;
 	}
 	.hook {
-		background-image: url(../images/hookBack.jpg);
+		background-image: url(../images/filler.jpg);
 		background-size: cover;
 		height: 600px;
 		padding-top: 20px;
@@ -663,7 +663,7 @@ footer .text-wrapper p {
 		display: inherit;
 	}
 	.hook {
-		background-image: url(../images/hookBack.jpg);
+		background-image: url(../images/filler.jpg);
 		background-size: cover;
 		height: 600px;
 		padding-top: 20px;
